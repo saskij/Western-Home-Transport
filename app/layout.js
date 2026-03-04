@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
             <div className="navLogoCenter">
               <Link href="/" className="navLogo">
                 <Image
-                  src="/new_logo.png"
+                  src="/Western-Home-Transport/new_logo.png"
                   alt="Western Home Transport"
                   width={200}
                   height={123}
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
             <div className="footerBrand">
               <div className="footerLogoWrap">
                 <Image
-                  src="/new_logo.png"
+                  src="/Western-Home-Transport/new_logo.png"
                   alt="Western Home Transport"
                   width={200}
                   height={123}

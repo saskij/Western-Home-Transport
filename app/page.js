@@ -32,7 +32,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <header id="home" className={styles.hero}>
         <Image
-          src="/new_hero.jpg"
+          src="/Western-Home-Transport/new_hero.jpg"
           alt="Western Home Transport Peterbilt truck hauling a modular home"
           fill
           priority
@@ -95,7 +95,7 @@ export default function Home() {
           <div className={styles.card}>
             <div className={styles.cardImageWrap}>
               <Image
-                src="/images/wht_modular.png"
+                src="/Western-Home-Transport/images/wht_modular.png"
                 alt="Modular home transport"
                 width={600}
                 height={400}
@@ -115,7 +115,7 @@ export default function Home() {
           <div className={styles.card}>
             <div className={styles.cardImageWrap}>
               <Image
-                src="/images/wht_timber.png"
+                src="/Western-Home-Transport/images/wht_timber.png"
                 alt="Timber structure transport"
                 width={600}
                 height={400}
@@ -134,7 +134,7 @@ export default function Home() {
           <div className={styles.card}>
             <div className={styles.cardImageWrap}>
               <Image
-                src="/images/wht_oversized.png"
+                src="/Western-Home-Transport/images/wht_oversized.png"
                 alt="Oversized building component transport"
                 width={600}
                 height={400}
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
         <div className={styles.fleetImageWrap}>
           <Image
-            src="/images/wht_fleet.png"
+            src="/Western-Home-Transport/images/wht_fleet.png"
             alt="Western Home Transport fleet in Boise yard"
             fill
             className={styles.fleetImg}
@@ -192,7 +192,7 @@ export default function Home() {
         <div className={styles.legacyInner}>
           <div className={styles.legacyPortrait}>
             <Image
-              src="/images/wht_owner.png"
+              src="/Western-Home-Transport/images/wht_owner.png"
               alt="Jim Burgess - Owner"
               width={400}
               height={500}
