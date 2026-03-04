@@ -516,11 +516,130 @@ img {
   transform: translateY(0);
 }
 
+/* =========================================
+   MOBILE / RESPONSIVE
+   ========================================= */
+
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1002;
+}
+
+.hamburger .bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--wood-dark);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(10.5px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-10.5px) rotate(-45deg);
+}
+
+/* Mobile Menu Overlay */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(253, 251, 247, 0.98);
+  /* Cream frosted */
+  backdrop-filter: blur(12px);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.mobileMenu.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobileMenuContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobileMenu.open .mobileMenuContent {
+  transform: translateY(0);
+}
+
+.mobileMenuContent a {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--wood-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.mobileMenuContent a:hover {
+  color: var(--amber);
+}
+
+.mobileMenuDivider {
+  width: 40px;
+  height: 3px;
+  background: var(--amber);
+  margin: 1rem 0;
+}
+
+.mobileMenuPhone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--amber);
+  color: #fff !important;
+  font-family: var(--font-heading);
+  font-size: 1.5rem !important;
+  padding: 12px 28px;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(197, 138, 42, 0.3);
+}
+
+.mobileMenuPhone svg {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 768px) {
 
   .navLinksLeft,
   .navLinksRight,
+  .navPhone,
   .navCta {
     display: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
